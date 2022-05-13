@@ -213,6 +213,7 @@ a:hover i {
 
 
 /* About Section Media Query */
+/* Done */
 @media only screen and (max-width: 1440px) {
   #aboutimage {
     margin-left: 40px;
@@ -221,6 +222,7 @@ a:hover i {
     margin-left: 200px;
   }
 }
+/* Done */
 @media only screen and (max-width: 1024px) {
   #about {
     padding-top: 10px;
@@ -232,9 +234,27 @@ a:hover i {
   #ah {
     margin-right: 100px;
   }
+  #ab{
+    width: 100%;
+    padding-right: 70px;
+  }
 }
+/* Done */
 @media only screen and (max-width: 768px) {
-  
+  #ap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  #a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #ap2{
+    text-align: center;
+  }
   #aboutimage {
       display: flex;
       justify-content: center;
@@ -244,9 +264,16 @@ a:hover i {
     width: 15%;
   }
   #ah {
-    margin-left: 3%;
+    margin-right: 5%;
   }
 }
+@media only screen and  (max-width: 425px) {
+  #aboutimage{
+    margin-bottom: 200px;
+  }
+
+}
+
 
 
 
