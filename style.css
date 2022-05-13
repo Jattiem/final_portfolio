@@ -227,6 +227,7 @@ a:hover i {
   #about {
     padding-top: 10px;
     box-sizing: content-box;
+    overflow-x: hidden;
   }
   #aboutimage {
     margin-left: 40px;
@@ -241,6 +242,9 @@ a:hover i {
 }
 /* Done */
 @media only screen and (max-width: 768px) {
+  #about{
+    overflow-x: hidden;
+  }
   #ap{
     display: flex;
     flex-direction: row;
@@ -261,22 +265,30 @@ a:hover i {
       margin-left: 180px;
   }
   #ab{
-    width: 15%;
+    width: 20%;
+    margin-left:630%;
   }
   #ah {
     margin-right: 5%;
   }
 }
-@media only screen and  (max-width: 425px) {
-  #aboutimage{
-    margin-bottom: 200px;
+@media only screen and (max-width: 425px) {
+  #about{
+    overflow-x: hidden;
   }
+  #aboutimage{
+    margin-left: -0%;
+  }
+  #ap2{
+    display: block;
+    text-align: center;
+  }
+  #a{
+    display: block;
+    text-align: center;
 
+  }
 }
-
-
-
-
 
 
 /* ProjectLinkbutton */
