@@ -12,7 +12,10 @@
   border-radius: 100rem;
   transition: box-shadow 0.15s ease-in-out;
 }
-
+#navlogo{
+  object-fit: cover;
+  width: 100%;
+}
 
 
 /*Inspired portfolio https://muneeb-davids.netlify.app/*/
@@ -73,13 +76,23 @@ a:hover i {
 #icon {
   color: #0d6efd;
 }
+#icon:hover{
+  box-shadow: 0px 0px 4px;
+  color: #0d6efd;
+  border-radius: 0 10px;
+}
 #icon2 {
   color: orangered;
+}
+#icon2:hover{
+  box-shadow: 0px 0px 4px;
+  color: orangered;
+  border-radius: 0 10px;
 }
 #ficon {
   font-size: 30px;
   line-height: 50px;
-  transition: 0.3s;
+  transition: 0.1s;
   color: #012966;
 }
 #net:hover {
@@ -99,8 +112,11 @@ a:hover i {
   margin-top: 5px;  
 }
 #hbutton:hover{
-  color: orangered;
-  border: 1px solid #0d6efd;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
 }
 #h1{
   color: aqua;
@@ -132,6 +148,7 @@ a:hover i {
 #ab {
   color: black;
   border: 1px solid #0d6efd;
+  outline: none;
 }
 #ab:hover {
   color: orangered;
@@ -214,16 +231,26 @@ a:hover i {
 
 /* About Section Media Query */
 /* Done */
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width:1440px)  and (max-width: 1441px) {
   #aboutimage {
     margin-left: 40px;
   }
   #aboutimage {
     margin-left: 200px;
   }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
 }
 /* Done */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width:1024px)  and (max-width: 1025px) {
   #about {
     padding-top: 10px;
     box-sizing: content-box;
@@ -239,9 +266,19 @@ a:hover i {
     width: 100%;
     padding-right: 70px;
   }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
 }
 /* Done */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:768px)  and (max-width: 769px) {
   #about{
     overflow-x: hidden;
   }
@@ -271,13 +308,24 @@ a:hover i {
   #ah {
     margin-right: 5%;
   }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width:320px) and (max-width: 321px) {
   #about{
-    overflow-x: hidden;
+    overflow-x: hidden
   }
   #aboutimage{
     margin-left: -0%;
+    /* width: 100% 100%; */
   }
   #ap2{
     display: block;
@@ -287,6 +335,47 @@ a:hover i {
     display: block;
     text-align: center;
 
+  }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width:375px) and (max-width: 376px) {
+  #aboutimage{
+    margin-left: -1px;
+  }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:425px) and (max-width:426px) {
+  #aboutimage{
+    margin-left: -1px;
+  }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -319,4 +408,118 @@ a:hover i {
 /* Contact Section */
 #testimonialicon {
   color: orangered;
+}
+/* Skills Section Media Query */
+@media only screen and (min-width:768px)  and (max-width: 769px) {
+  #pro{
+    display: none;
+  }
+  #mom{
+    padding-bottom: 40px;
+  }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width:425px)  and (max-width: 426px) {
+  #pro{
+    display: none;
+  }
+  #mom{
+    padding-bottom: 40px;
+  }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width:375px)  and (max-width: 376px) {
+  #pro{
+    display: none;
+  }
+  #mom{
+    padding-bottom: 40px;
+  }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width:320px)  and (max-width: 321px) {
+  #pro{
+    display: none;
+  }
+  #mom{
+    padding-bottom: 40px;
+  }
+  #icon:hover{
+    width: 100px;
+  }
+  #icon2:hover{
+    width: 100px;
+  }
+  #cen{
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Nav underline effect */
+#navb:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#navb:hover {
+ background-position: 0;
+}
+
+#navb:hover::before{
+  width: 100%;
+}
+
+#navp:before{
+  content: '';
+  background: orangered;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+#navp:hover {
+ background-position: 0;
+}
+
+#navp:hover::before{
+  width: 100%;
 }
