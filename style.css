@@ -50,13 +50,14 @@
 }
 #contact {
   font-family: "Macondo", cursive;
+  color: #0d6efd;
 }
 #projects {
   font-family: "Macondo", cursive;
 }
 #testimonial{
   font-family: 'Macondo', cursive;
-  color: orangered;
+  color: #0d6efd;
 }
 #about {
   font-family: "Macondo", cursive;
@@ -305,7 +306,7 @@ a:hover i {
       margin-left: 180px;
   }
   #ab{
-    width: 20%;
+    width:0 20%;
     margin-left:630%;
   }
   #ah {
@@ -385,24 +386,67 @@ a:hover i {
 
 /* ProjectLinkbutton */
 #linkbutton{
-  font-size: 30px;
+  font-size: 20px;
   line-height: 50px;
   transition: 0.3s;
   color: #012966;
 }
 #linkbutton:hover{
-  color: orangered;
+  color: #0d6efd;
+  font-size: 20px;
 }
-
-
 /* Testimonial button */
 .circle{
+  background-color: #0d6efd !important;
+  aspect-ratio: 1 !important;
+  border-radius: 50% !important;
   width: 20px !important;
   height: 20px !important;
   aspect-ratio: 1 !important;
-  border-radius: 50% !important;
-  background-color: #0d6efd !important;
 }
+#tesimg2{
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-position: 0 0.5px;
+}
+#tesimg1{
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+#tesimg3{
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+#tesimg4{
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-position: 0 0.5px;
+}
+#tesimg5{
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-position: 0 0.5px;
+}
+#text{
+  font-family: "Macondo", cursive;
+}
+
+
 /* TEXTWRITER */
 #typewrite a{
   text-decoration: none;
@@ -525,4 +569,10 @@ a:hover i {
 
 #navp:hover::before{
   width: 100%;
+}
+/* testimonial section media query */
+@media only screen and (min-width:425px)  and (max-width: 426px) {
+  #tesimg1{
+    width: 200%;
+}
 }
